@@ -1,35 +1,70 @@
-# 🎉 Welcome to My Project!
+🎓 Flashcard Mastery
+Welcome to Flashcard Mastery — a fast, responsive, and beautifully crafted flashcard web app designed to make learning more effective and fun.
 
-Hey there! Glad you're checking this out.  
-This project is a **fast, responsive, and beautifully crafted web application**, built with modern tools to make development **smooth and enjoyable**.  
+This project is built from scratch with modern tools and reflects my passion for intuitive design, seamless user experience, and smart learning.
 
-## 🌐 Project Info  
+🌟 Features
+🔄 Flip & Study – Flip flashcards and mark them as known or unknown.
 
-**Live URL**: [Click Here to Visit](https://lovable.dev/projects/2c833c46-b0dc-4ac9-bbc3-5fa1b5a7da0f)  
+✅ Progress Tracking – Visual dashboard to see your improvement over time.
 
----
+📊 Review Stats – Get insight into your learning patterns.
 
-## ✏️ How Can You Edit This Code?
+🌓 Dark/Light Mode – Toggle themes for comfortable viewing.
 
-There are multiple ways to tweak and improve the project. Choose what suits you best!
+💾 Local Storage – Your flashcards and stats are stored safely in your browser.
 
-### **Option 1: Edit via Lovable (Fastest Way)**
-Simply visit [Lovable Project](https://lovable.dev/projects/2c833c46-b0dc-4ac9-bbc3-5fa1b5a7da0f) and start making changes.  
-Whenever you edit here, **updates automatically reflect in the repo**—no need for manual commits.
+🎯 Adaptive Learning – (Optional) Show tougher cards more often.
 
-### **Option 2: Work in Your Favorite IDE (Recommended)**
-If you love VS Code, WebStorm, or any other editor, cloning and working locally might be best.  
+📱 Mobile-Friendly – Responsive design that works great on all devices.
 
-🔹 **Steps to Set Up Locally:**  
-```sh
-# Step 1: Clone the repository
-git clone <YOUR_GIT_URL>
+⚙️ Tech Stack
+React + TypeScript
 
-# Step 2: Navigate to the project directory
-cd <YOUR_PROJECT_NAME>
+Tailwind CSS for elegant, utility-first styling
 
-# Step 3: Install dependencies
+Framer Motion for smooth animations
+
+Zustand for lightweight state management
+
+Vite for fast builds and development
+
+LocalStorage for persistence
+
+🚀 Live Demo
+🔗 Click here to visit the app
+(Replace # with your deployed app URL, e.g., Netlify or Vercel)
+
+🛠️ Getting Started
+Follow these simple steps to run the project locally:
+
+# 1. Clone the repository
+git clone <your-github-repo-url>
+
+# 2. Navigate into the project folder
+cd flashcard-mastery
+
+# 3. Install dependencies
 npm install
 
-# Step 4: Start the dev server (hot reloading enabled)
+# 4. Start the development server
 npm run dev
+Now, open your browser and go to http://localhost:5173 🎉
+
+🧩 Future Improvements
+🎖️ Add motivational badges and sound effects
+
+🧠 Enhanced spaced repetition algorithm
+
+🌐 Multi-language support
+
+🧪 Import/export custom decks
+
+⭐ Support
+If you enjoyed using this app, feel free to:
+
+⭐ Star the repo
+
+🧑‍🤝‍🧑 Share it with your friends
+
+🛠 Contribute or suggest new features
