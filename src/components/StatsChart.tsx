@@ -1,4 +1,3 @@
-
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -32,19 +31,24 @@ const StatsChart = ({ performanceData }: StatsChartProps) => {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
   
+  // Get today's date
+  const today = new Date();
+
   // Sort data by date
   const sortedData = [...performanceData].sort((a, b) => 
     new Date(a.date).getTime() - new Date(b.date).getTime()
   );
-  
-  const labels = sortedData.map(item => {
-    const date = new Date(item.date);
-    return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+
+  // Replace labels with today's date
+  const labels = sortedData.map((_, index) => {
+    const adjustedDate = new Date();
+    adjustedDate.setDate(today.getDate() - index); // Offsets each entry slightly
+    return adjustedDate.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
   });
-  
+
   const successRateData = sortedData.map(item => item.successRate);
   const cardsStudiedData = sortedData.map(item => item.cardsStudied);
-  
+
   const chartData = {
     labels,
     datasets: [
@@ -67,7 +71,7 @@ const StatsChart = ({ performanceData }: StatsChartProps) => {
       }
     ],
   };
-  
+
   const options: ChartOptions<'line'> = {
     responsive: true,
     interaction: {
@@ -124,7 +128,7 @@ const StatsChart = ({ performanceData }: StatsChartProps) => {
       }
     },
   };
-  
+
   return (
     <div className="p-4 rounded-xl bg-card">
       <h3 className="text-lg font-medium mb-3">Learning Progress</h3>
