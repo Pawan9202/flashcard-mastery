@@ -33,7 +33,7 @@ LocalStorage for persistence
 
 🚀 Live Demo
 🔗 Click here to visit the app
-(Replace # with your deployed app URL, e.g., Netlify or Vercel)
+https://flashcard-mastery-ygli.vercel.app/dashboard
 
 🛠️ Getting Started
 Follow these simple steps to run the project locally:
